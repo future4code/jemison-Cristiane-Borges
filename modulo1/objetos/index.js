@@ -34,7 +34,25 @@ const tartaruga = {...gato, nome: gato.nome.replaceAll("a", "o")}
 
 console.log(cachorro)
 console.log(gato)
-console.log(tartaruga)*/
+console.log(tartaruga)
+
+RESPOSTA: VAI IMPRIMIR AS INFORMAÇÕES DE CADA OBJETO COM SUAS PRPRIEDADES. COMO O ULTIMO OBJETO TEM O REPLACE, O "NOME" DA TARTARUGA VAI IMPRESSO TROCANDO O A PELA LETRA O
+
+function minhaFuncao(objeto, propriedade) {
+	return objeto[propriedade]
+}
+
+const pessoa = {
+  nome: "Caio", 
+  idade: 23, 
+  backender: false
+}
+
+console.log(minhaFuncao(pessoa, "backender"))
+console.log(minhaFuncao(pessoa, "altura"))
+
+RESPOSTA: NAO VAI IMPRIMIR A ALTURA, POIS ELA NAO ESTA DENTRO DO OBJETO COMO PROPRIEDADE
+*/
 
 /*Exercícios de escrita de código
 1- A)
@@ -55,7 +73,7 @@ tresApelidos: ["Cris", "Crix", "Crislaine"]
     console.log(`Eu sou ${meuNome}, mas pode me chamar de: ${meusApelidos1} , ${meusApelidos2} ou ${meusApelidos3}`)
   
  }
-mostraApelidos(apelidos)*/
+mostraApelidos(apelidos)
 
 //1- b)
 const apelidos = {
@@ -69,15 +87,79 @@ const novoApelido ={
     tresApelidos: ["Crissss", "Crixxx", "Crisinha"]
 
 }
-function mostraApelidos(apelidos,novoApelido){
+function mostraApelidos(novoApelido){
     const meuNome = apelidos.nome
-    const meusApelidos1 = apelidos.novoApelido.tresApelidos[0]
-    const meusApelidos2 = apelidos.novoApelido.tresApelidos[1]
-    const meusApelidos3 = apelidos.novoApelido.tresApelidos[2]
+    const meusApelidos1 = novoApelido.tresApelidos[0]
+    const meusApelidos2 = novoApelido.tresApelidos[1]
+    const meusApelidos3 = novoApelido.tresApelidos[2]
     
 
    
     console.log(`Eu sou ${meuNome}, mas pode me chamar de: ${meusApelidos1} , ${meusApelidos2} ou ${meusApelidos3}`)
   
 }
-mostraApelidos(novoApelido)
+mostraApelidos(novoApelido)*/
+
+/*2-a)
+
+const informacaoUm ={
+    nome: "Gabriela",
+    idade: 20 ,
+    profissao: "Esteticista"
+
+}
+const informacaoDois ={
+    nome: "Elena",
+    idade: 35,
+    profissao: "Empreendedora"
+
+}
+function imprimeDados(informacaoUm, informacaoDois){
+
+    const nomeUm = informacaoUm.nome
+    const valorDoNome = nomeUm.length
+    const idadeUm = informacaoUm.idade
+    const profissaoUm = informacaoUm.profissao
+    const valorDaProfissao = profissaoUm.length
+
+    const nomeDois = informacaoDois.nome
+    const valorDoNomeDois = nomeDois.length
+    const idadeDois = informacaoDois.idade
+    const profissaoDois = informacaoDois.profissao
+    const valorDaProfissaoDois = profissaoDois.length
+
+    console.log(nomeUm,",", valorDoNome,",", idadeUm,",", profissaoUm,",", valorDaProfissao)
+    console.log(nomeDois,",", valorDoNomeDois,",", idadeDois,",", profissaoDois,",", valorDaProfissaoDois)
+}
+
+imprimeDados(informacaoUm, informacaoDois)*/
+
+//a) criar variavel
+/*const carrinho =[]
+
+//b) criar tres objetos 
+const frutaUm ={
+    nome: "Murango",
+    disponibilidade: true
+
+}
+const frutaDois = {
+    nome: "Banana",
+    disponibilidade: true
+
+}
+const frutaTres ={
+    nome: "Laranja",
+    disponibilidade: true
+
+}
+//c) funcao com parametro fruta
+function recebeFrutas(fruta){ 
+
+    carrinho.push(carrinho[frutaUm, frutaDois, frutaTres])
+      
+}
+
+//d)
+recebeFrutas(carrinho)
+console.log([frutaUm, frutaDois, frutaTres])*/
