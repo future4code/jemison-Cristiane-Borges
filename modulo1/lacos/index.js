@@ -3,8 +3,8 @@
 //1-RESPOSTA: ELE VAI IMPRIMIR DE ATE O NUMERO 10 
 
 //2-A) RESPOSTA: ELE IRÁ EXIBIR OS NUMEROS DO ARRAY MAIOR QUE 18. NO CASO, 18,18,21...
-//2-B) SIM. 
-//3-
+//2-B) SIM. MAS NAO CONSIGO CRIAR UMA LOGICA PRA ISSO ;)
+//3-C)ELE IRIA IMPRIMIR QUATRO ASTERICOS.
 
 //Exercícios de escrita de código
 
@@ -49,4 +49,32 @@ function arrayDeNumeros (arrayOriginal){
     }
     
 }
-arrayDeNumeros([arrayOriginal])
+arrayDeNumeros([arrayOriginal])*/
+
+//b) Escreva um programa que imprime cada um dos valores do array original divididos por 10
+function arrayDeNumeros (arrayOriginal){
+
+    for (let array of arrayOriginal){
+
+        
+        console.log(array/10)
+        
+    }    
+}
+arrayDeNumeros(arrayOriginal)
+//c)Escreva um programa que crie um novo array contendo, somente, os números pares do array original e imprima esse novo array
+    novoArray = []
+
+function arrayDeNumeros(arrayOriginal){
+
+    for (novoArray of arrayOriginal){
+
+        if (novoArray%2 === 0)
+
+        console.log(novoArray)
+    }
+}
+arrayDeNumeros(arrayOriginal)
+
+//d) Escreva um programa que crie um novo array contendo strings, da seguinte forma: "O elemento do índex i é: numero". Depois, imprima este novo array.
+
