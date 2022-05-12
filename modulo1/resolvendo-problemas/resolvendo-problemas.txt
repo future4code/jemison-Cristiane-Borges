@@ -1,0 +1,19 @@
+Resumo 7 passos fundamentais para resulução de problemas
+
+Passo 1- Ler atentamente ao anunciado. Se for o caso, leia varias vezes, 
+e dentro disso identificar palavras chaves, onde voce vai conseguir 
+identificar o que previsa ser feito.
+
+Passo 2- Separar as palavras chaves e verbos, deixar anotado no incio do codigo,
+para identificar uma possivel solução
+
+Passo 3- Começar a criar o codigo a partir do que vai entrar e o que deve sair como resultado
+
+Passo 4- Realizar o codigo atraves de um diagrama ou colocar em um papel
+
+Passo 5- Criar o seu codigo com as primeiras soluções que conseguir imaginar, 
+mesmo que fique longo.
+
+6- testar o seu codigo à grosso modo, com palavras faceis e objtivas. 
+
+7-Reescrever a sintaze do codigo caso consiga faze-lo mais enxuto 
