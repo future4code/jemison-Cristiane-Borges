@@ -65,6 +65,12 @@ function retornaNumerosParesElevadosADois(array) {
 
 // EXERCÍCIO 06 - Escreva uma função que receba um array de números e retorne o maior número dele.
 function retornaMaiorNumero(array) {
+
+    const maiorNumero = array.reduce( function(maiorNumero, numero){
+
+        return Math.max(maiorNumero,numero)
+    })
+    return maiorNumero
   
 }
 
@@ -74,7 +80,7 @@ function retornaMaiorNumero(array) {
 - `maiorDivisivelPorMenor` → booleano indicando se o maior é divisível pelo menor
 - `diferenca` → contém a diferença entre eles (deve ser um **número positivo** sempre)
 
-⚠️   Obs: para os testes funcionarem, as propriedades do objeto devem possuir os exatos nomes acima*/
+   Obs: para os testes funcionarem, as propriedades do objeto devem possuir os exatos nomes acima*/
 function retornaObjetoEntreDoisNumeros(num1, num2) {
 
 }
