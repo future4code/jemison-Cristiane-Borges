@@ -82,19 +82,45 @@ function retornaMaiorNumero(array) {
 
    Obs: para os testes funcionarem, as propriedades do objeto devem possuir os exatos nomes acima*/
 function retornaObjetoEntreDoisNumeros(num1, num2) {
+    
 
+    
+    
 }
+
 
 // EXERCÍCIO 08 -Escreva uma função que, recebendo um número N como parâmetro, retorne os N primeiros números pares 
 function retornaNPrimeirosPares(n) {
    
+ 
 }
 
 // EXERCÍCIO 09 - Faça uma função que receba como parâmetro os tamanhos dos três lados do triângulo: ladoA, ladoB, ladoC e retorne se ele é equilátero, isósceles ou escaleno 
 //
 function classificaTriangulo(ladoA, ladoB, ladoC) {
 
-}
+    const triangulo1 = ladoA
+    const triângulo2 = ladoB
+    const triangulo3 = ladoC
+
+    if ((triangulo1 & triângulo2 ===  triangulo3)){
+
+        return "Equilátero"
+
+    }else if ( triangulo1 || triângulo2 === triangulo3){
+
+        return "Isósceles"
+
+    } else { 
+    
+        return "Escaleno"
+    }
+
+    
+} 
+
+
+
 
 // EXERCÍCIO 10 - Escreva uma função que receba um array de números e retorne um novo array com apenas 2 valores (NESTA ORDEM): o segundo maior e o segundo menor número do array original
 function retornaSegundoMaiorESegundoMenor(array) {
