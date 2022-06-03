@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    background: rgb(126, 126, 160);
+    padding: 20px;
+    grid-template-columns: 90% 60px;
+    font-weight: bold;
+
+
+}
+footer {
+    display: grid;
+    background: rgb(126, 126, 160);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;    
+
+
+}
