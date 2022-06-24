@@ -1,0 +1,29 @@
+.container-pequeno{
+
+    margin-left: 10px;
+    padding: 50px;
+    
+}
+
+.email{
+
+    display: flex;
+}
+
+.email > p {
+
+    margin-left: 10px;
+    
+}
+
+.endereco{
+
+    display: flex;
+      
+}
+.endereco > p {
+
+    display: flex; 
+   margin-left: 10px;
+          
+} 
