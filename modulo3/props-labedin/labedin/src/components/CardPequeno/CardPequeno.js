@@ -4,7 +4,7 @@ import './CardPequeno.css'
 
 function CardPequeno(props) {
     return (
-        <div className="bigcard-container">
+        <div className="small-card">
              <img src={ props.imagem }/>
             
             <div className="container-pequeno"> 

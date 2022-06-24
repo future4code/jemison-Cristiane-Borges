@@ -1,13 +1,16 @@
 .container-pequeno{
 
-    margin-left: 10px;
-    padding: 50px;
+    width: 40vw;
     
 }
 
 .email{
 
     display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 28px 37px;
+    margin-bottom: 10px;
 }
 
 .email > p {
@@ -19,11 +22,16 @@
 .endereco{
 
     display: flex;
-      
+    align-items: center;
+    border: 1px solid black;
+    padding: 28px 37px 20px;
+    margin-bottom: 10px;
+   
 }
 .endereco > p {
 
     display: flex; 
-   margin-left: 10px;
+    margin-left: 10px;
           
 } 
+
