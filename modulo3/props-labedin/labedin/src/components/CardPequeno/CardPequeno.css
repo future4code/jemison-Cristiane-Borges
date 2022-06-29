@@ -1,0 +1,37 @@
+.container-pequeno{
+
+    width: 40vw;
+    
+}
+
+.email{
+
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 28px 37px;
+    margin-bottom: 10px;
+}
+
+.email > p {
+
+    margin-left: 10px;
+    
+}
+
+.endereco{
+
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 28px 37px 20px;
+    margin-bottom: 10px;
+   
+}
+.endereco > p {
+
+    display: flex; 
+    margin-left: 10px;
+          
+} 
+
