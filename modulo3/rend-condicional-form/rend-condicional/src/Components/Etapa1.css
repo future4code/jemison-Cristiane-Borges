@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.etapa1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
