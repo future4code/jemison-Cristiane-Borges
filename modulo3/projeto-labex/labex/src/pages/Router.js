@@ -15,8 +15,8 @@ function Router() {
           <Route index element={<HomePage />} />
           <Route path="/adm" element={<AdmHomePage />} />
           <Route path="/inscricao" element={<AplicationFormPage />} />
-          <Route path="/trip" element={<CreatTripPage />} />
-          <Route path="/tripPage" element={<ListtripsPage />} />
+          <Route path="/criarViagem" element={<CreatTripPage />} />
+          <Route path="/Viagens" element={<ListtripsPage />} />
           <Route path="/details" element={<TripDetailsPage />} />
         </Routes>
       </BrowserRouter>
