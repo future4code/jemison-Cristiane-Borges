@@ -4,8 +4,9 @@ import AdmHomePage from "./AdminHomePage";
 import AplicationFormPage from "./ApplicationFormPage";
 import CreatTripPage from "./CreateTripPage";
 import HomePage from "./HomePage";
-import ListtripsPage from "./ListTripsPage";
+import ListTripsPage from "./ListTripsPage";
 import TripDetailsPage from "./TripDetailsPage";
+import LoginPage from "./LoginPage";
 
 function Router() {
   return (
@@ -14,9 +15,10 @@ function Router() {
         <Routes>
           <Route index element={<HomePage />} />
           <Route path="/adm" element={<AdmHomePage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/inscricao" element={<AplicationFormPage />} />
           <Route path="/criarViagem" element={<CreatTripPage />} />
-          <Route path="/Viagens" element={<ListtripsPage />} />
+          <Route path="/Viagens" element={<ListTripsPage />} />
           <Route path="/details" element={<TripDetailsPage />} />
         </Routes>
       </BrowserRouter>
