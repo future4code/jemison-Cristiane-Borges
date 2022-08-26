@@ -19,7 +19,7 @@ function Router() {
           <Route path="/inscricao" element={<AplicationFormPage />} />
           <Route path="/criarViagem" element={<CreatTripPage />} />
           <Route path="/Viagens" element={<ListTripsPage />} />
-          <Route path="/details" element={<TripDetailsPage />} />
+          <Route path="/DetalhesDaViagem" element={<TripDetailsPage />} />
         </Routes>
       </BrowserRouter>
 

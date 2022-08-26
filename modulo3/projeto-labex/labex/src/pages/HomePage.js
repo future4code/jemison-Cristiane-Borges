@@ -1,5 +1,8 @@
 import React from "react";
 import { useNavigate} from "react-router-dom";
+import {ContainerHome }from "../style/homePage"
+// import {formLogin} from "../style/homePage"
+
 
 function HomePage() {
 const navigate = useNavigate();
@@ -18,12 +21,14 @@ const goToAdm =()=>{
 }
 
   return (
-<section>
+<ContainerHome>
   <h1>Bem Vindo!</h1>
+  <formLogin>
   <button onClick={goToTrip}>Visualizar Viagens</button>
-  <button onClick={goToLogin}>Pagina de Login</button>
+  <button onClick={goToLogin}>Logout</button>
   <button onClick={goToAdm}>Área Administrativa</button>
-</section>
+  </formLogin>
+</ContainerHome>
 
 
 
