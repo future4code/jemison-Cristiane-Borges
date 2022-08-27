@@ -1,51 +1,53 @@
-import axios from "axios";
-import React, { useEffect } from "react";
-import {URL}  from "../constants/constants";
+import React from "react";
+import useRequestData from "../hooks/useRequestData";
 import useProtectPage from "../hooks/useProtectPage"
-import {useNavigate} from "react-router-dom"
+import {useNavigate, useParams} from "react-router-dom"
+import { URL_TRIPDEATAILS} from "../constants/constants"
+// import { Button}from "../style/homePage"
 
 function TripDetailsPage() {
 const navigate =useNavigate()
-    useProtectPage()
 
-    useEffect(()=>{
-      const token = localStorage.getItem("token")
+    useProtectPage() 
 
-      axios.get(`${URL}trip/:id`,{
-        headers:{
-        auth: token
-        }
-      }).then((response)=>{
-        localStorage.getItem("token",response.data.token)
-      }).catch((error)=>{
-      console.log("Deu erro:", error.response)
-    })  
-    },[])
-    // const  details = data && data.tri.id && data.trip.id.map((trip)=>{
+    const params=useParams()
 
-    //   return (
-    //      <div key={trip.id}>
-    //     <p>{trip.planet}</p>
-    //     <p>{trip.durationInDays}</p>
-    //     <p>{trip.date}</p>
-    //     <p>{trip.name}</p>
-    //     <p>{trip.description}</p>
-    //     <p>{trip.candidates}</p>
-    //      </div>)
-    // })
+    const headers={
+
+      headers:{
+
+        auth: localStorage.getItem("token")
+      }
+    }
+
+    const [data]= useRequestData(`${URL_TRIPDEATAILS}trip/${params.id}`, headers)
+    // console.log(details)
+
+    
+    const  details = data && data.trip && data.trip.candidates.map(trips=>{
+
+      return (
+         <div key={trips.id}>
+        <p>{trips.applicationText}</p>
+        <p>{trips.profession}</p>
+        <p>{trips.age}</p>
+        <p>{trips.name}</p>
+        <p>{trips.country}</p>
+        </div>)
+    })
     const goToSubcription= ()=>{
               navigate("/inscricao")
       }
 
 
   return (
-    <section>
-      {/* {details} */}
-    
+    <div>
+      {data && data.trip && data.trip.candidates.length ? details: <p>Sem candidatos pendentes</p>}
+     
 
     <button onClick={goToSubcription}>Inscreva-se para uma viagem</button>
    
-  </section>
+  </div>
   
   )
 }

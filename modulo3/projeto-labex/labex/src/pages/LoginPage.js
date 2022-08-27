@@ -3,6 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import useForm from "../hooks/useForm";
 import {URL_LG} from "../constants/constants";
+// import {Button, Titulo}from "../style/homePage"
 
 
 function LoginPage() {
@@ -14,7 +15,7 @@ function LoginPage() {
         axios.post(`${URL_LG}cristiane-jemison/login`,form)
         .then((response)=>{
             localStorage.setItem("token",response.data.token)
-            navigate("/Viagens")
+            navigate("/adm")
            console.log (response.data)        
         }).catch((error)=>{
             alert ("E-mail ou senha incorretos. Tente de novo!", error)

@@ -10,7 +10,13 @@ const useRequestData = (url) => {
 
     useEffect(() => {
         setIsLoading(true)
-        axios.get(url)
+        axios.get(url, {
+
+            headers: {
+
+                auth:localStorage.getItem("token")
+            }
+        })
             .then((response) => {
                 setIsLoading(false)
                 setData(response.data)
